@@ -68,7 +68,7 @@ void Engine::input()
                     for (size_t i = 0; i < static_cast<unsigned long long>(numPart); i++)
                     {
 //                    The numPoints parameter in the Particle constructor is a random number in the range [25:50]
-                        int numPoints = 25 + rand() % 26;
+                        int numPoints = 25 + rand() % 50;
 
 //                      Pass the position of the mouse click into the Particle constructor so it has a starting position
                         Particle newPart(m_Window, numPoints, static_cast<Vector2i>(mouseLocation));
